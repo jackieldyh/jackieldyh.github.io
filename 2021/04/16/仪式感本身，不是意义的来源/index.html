@@ -1,37 +1,887 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Apr, 2021," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="隆重不一定重要，重要也不意味着隆重。当真正知道自己的方向，以及明白这个选择具有的意义的时候，也就不会在一个问卷上押注整个人生的意义。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="仪式感本身，不是意义的来源">
+<meta property="og:url" content="https://jackieldyh.github.io/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/index.html">
+<meta property="og:site_name" content="Luminescent">
+<meta property="og:description" content="隆重不一定重要，重要也不意味着隆重。当真正知道自己的方向，以及明白这个选择具有的意义的时候，也就不会在一个问卷上押注整个人生的意义。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-16T05:28:59.000Z">
+<meta property="article:modified_time" content="2021-04-17T12:30:26.000Z">
+<meta property="article:author" content="Jackie Lei">
+<meta property="article:tag" content="Apr, 2021">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jackieldyh.github.io/2021/04/16/仪式感本身，不是意义的来源/"/>
+
+
+
+
+
+  <title>仪式感本身，不是意义的来源 | Luminescent</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Luminescent</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Rage, rage against the dying of the light.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jackieldyh.github.io/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luminescent">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">仪式感本身，不是意义的来源</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-04-16T13:28:59+08:00">
+                2021-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Comments/" itemprop="url" rel="index">
+                    <span itemprop="name">Comments</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+             <span id="/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/" class="leancloud_visitors" data-flag-title="仪式感本身，不是意义的来源">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  9
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>隆重不一定重要，重要也不意味着隆重。<br/><br>当真正知道自己的方向，以及明白这个选择具有的意义的时候，也就不会在一个问卷上押注整个人生的意义。<br/></p>
+<span id="more"></span>
+
+<hr>
+<p>&emsp;&emsp;究竟对一个文本的解读应该进行到何种地步？这是一个需要永恒思考的问题。<br/><br>&emsp;&emsp;在公共事件的传播与讨论之中，语言往往成为某种情绪的象征和发泄的通道，相当意义上来看，语言本身，是一种工具性的存在。<br/><br>&emsp;&emsp;但是语言真正的意涵绝不仅仅如此。当我们纠结于一两句话，一两个字词的时候，在一种非严肃的表达语境之中，这或许并不是一种常态——但却正在变成我们的现实。<br/></p>
+<hr>
+<p>&emsp;&emsp;你会发现，突然之间，这座校园进入校庆时间，如果说时光作为刻度，那这段时间一定时期最令人瞩目的时刻。但是不仅如此，如果从日常来看，这其实本身就令人焦虑与不安——“期中”这样的一种称号，悬在这所园子里每一个人头上——或许并不能感受到某种意义上生活迅速的转变，但是在逐渐延长的灯火之中，在打开的一个个文档，网络学堂逐渐增加的数字之中，已经悄然提醒着我们时序已经到了下一个季节——但是这并不是马上就能让人接受的，尤其是在一个个隐性的DDL和大好的春光面前，其实特别容易令人迷失——不对呀，你不应该相当清楚的知道自己要去向哪里吗？<br/><br>&emsp;&emsp;这篇推送的导火索，实际上是昨天晚上截止的零字班专业意向问卷。这大概是新雅学生独有的体验，也是新雅在招生宣传中一个很重要的“优势”：一年之后任选专业。这一届，是新雅的第五届学生。某种意义上说，这种焦虑持续了五年，但是这之中有种种波折，而零字班大概是一批最新绘制这“焦虑波形图”的一批人。<br/><br>&emsp;&emsp;诚然，新雅的政策是的同学们能够省去很多焦虑与事项，更加集中于自己的课程学习与专业探索。但是这种自由同样意味着需要对自我有一个清晰的认知——尤其是，当看到这个选择对未来的意义的时候。我非常理解在提交问卷之后在朋友圈发一条长长的小作文——毕竟任何人都有表达的自由。但是当这种表达被置于一个比较的视野之中去被评价与分析，往往会带给人完全不同于事件本身的意义。——从某种程度上，你其实可以说这是一种过度解读，但是很遗憾的是，其似乎还真是有某种逻辑的。<br/><br>&emsp;&emsp;但重要的是，这种逻辑建立在某种预设之上，而在这座园子里，有太多预设被认为是“不言自明”的——特别是这些预设，被通过某种宣传标语的形式，从新生教育开始开始进行传播，并且通过不断的物质激励，使得在这套评价体系中的人不断地实现“自我实现的预言”的时候，我们不由得想问，这与大学里的“思想独立”“批判性思维”，真的是能够共存的吗？还是说我们的教育，之中否定的是自己自身？这似乎是某种悖论性质的存在，但是某种意义上，这又是这座学校最终的目标。我们似乎很愿意听到对学校的批判，甚至于在某些平台上，其已经成为了一种“定期性”的“群体欢腾”——但是谁又能说，这种词语的表达，本身不是这种体制训练的结果呢？于是乎，我们似乎落到了一种逻辑的闭环与悖论之中，并且并不能逃离。<br/><br>&emsp;&emsp;或者说，在这样的现实之中，有没有给人一种逃离的可能？<br/></p>
+<hr>
+<p>&emsp;&emsp;这或许就与这篇Blog的缘起有关。那天似乎真的发生了很多事。如果我们将一些偶发而日常的“官宣”排除，那就是校内最大的体育赛事最受关注的集体项目（足球、篮球）的冠军产生，以及新雅大一学生们专业意向问卷的提交。——当然这里想插进来说一句，有的时候，这种情感表达似乎有某种“共情”的效果，这种效果会让人俘虏于其中，去做出一些，事后来看或许并不理智的行为——当然，从更广的意义上来说，这或许就是某种冲动与欲望对生活的控制，而一种理性而“健康”的方式，就是不断的去叩问自己的内心，或许冲动有其道理，这里也不是说所有事情都应该去进行权衡取舍，到那时冷静的思考应该是某种意义上永恒的主题，而只有做到这一点，才能有对语言控制的基础。<br/><br>&emsp;&emsp;清华是具有很强的集体主义传统的学校——当然，这句话的适用主体，当然是建国以来形成的“新清华”（这并不是某种政治不正确，毕竟清华大学现在的校报，还叫《新清华》呢）。在那个特殊的年代，“听话，出活”与“红色工程师”的传统交相辉映，或许是某种意义上国家与个人结合的最好方式。但是在现在呢？尤其是，或许这种理想与集体主义仍然值得传诵，但是是否真正是一种“最好”，本身就变成了一件可讨论的事情。——是的，我们现在正处于一个多元价值的时代。某种意义上这是一种进步的体现，但是这同样要求教育“进步”——这或许并不能简单的归结为某种“进步主义”，而是对于自身现实与未来的深度关切。而这个关切所指导的行动，绝对不应该是在问卷提交之前的最后一晚如此焦虑——用一个晚上去决定一生，未免有些太过潦草。<br/><br>&emsp;&emsp;当然，你可以说我们看到的，实际上是排除了“沉默的大多数”之后的想法。对，没有错，这确实是某种经过筛选之后的结果，但是这也同样代表某种真实——尽管这种真实，是需要被解读的。<br/><br>&emsp;&emsp;因此，你不得不承认语言的微妙之处——对于不同的主体来说，一件从形式上可以被称为“隆重”的事情，并不一定是重要的，比如说校庆当然是隆重的，但是这对于正在期中的大多数人，或者说，对于面临大三关键抉择的人来说，这或许并不是重要的——他们或许会同样做出一些仪式上的表达，但是这并不是某种“非此不可”的集体主义。我们会说，中国从宋代以来有着某种“内向”性的转换。不讨论史实，但是这个判断存在本身，就说明了某种事实。而表达本身，是对事实的一种描绘，或者说装点。<br/><br>&emsp;&emsp;应该允许每个人都有自己的价值排序与个人表达。<br/></p>
+<hr>
+<p>4.17凌晨补记<br/><br>&emsp;&emsp;过去的一天有一点点奇幻：某种意义上，我其实什么都没有干，但是我的大脑给了我一种非常清晰的满足感的暗示，这或许是因为，大家不论是对于自己的过去、现在，或许还会有未来吧，有了更深入的了解——可能对于我而言，某种意义上来说，有一种“祛魅”的感觉，去感到自己真实地活在这个共同体之中，去共享喜怒哀乐与焦虑——有的时候你可以说这是无用，你也可以说这是某种疏离，甚至是某种内卷和传播焦虑——对，这本身没有任何意义，甚至会拖慢本来已经岌岌可危的最近需要完成的DDL的进度。但是某种意义上这种认识又确实是合理的——不论你是听到了各种各样对于五一的安排，或者是各种各样对他人的评价， 对未来的规划，某种意义上，很奇妙的，你会意识到“人是社会性的动物”这一个基本事实，并且你会有一种分享的欲望——我不知道这样的描述对不对，或者准不准确——大概我早已丧失了对于语言的掌控能力——当时我恍惚有一种在开学术会议的感觉，并且我还需要去在正确的时间，去说出一些“正确”的话——但是这些话，我也确实没有在伪装。这大概也是一种很难得的经历吧。从下午五点半到晚上零点，七个小时的时间竟然能够有这么丰富的容量，而且就仅仅是在这间屋子，一群已经熟识的人，实在是有一些奇妙——本来还有位PPE9的同学来我们的活动，当然她完全有“资格”，但是我们关心的，实在不是“共同体建设”这样的问题——或者说，其实我们本就是原子状态（或者是我这样认为），其实这并不是很常态，但是我们需要它——当然，你可以找到各种的归因，或者你可以说出很多特点或者理由，但是这其实无法改变着是某种“变态”，以及，其实在某种意义上这其实是本就令人珍视这一事实——而学术作为某种意义上“异化”过程的本身，其实注定是孤独的，尤其是对于人文学科而言，是沉浸在故纸堆中的事业。但是这并不因此而改变我们的社会化取向。但是在这个取向的过程中，同样需要关注的， 是我们生活的常态。这或许就是某种辩证法。而这样的交流， 或许无法用语言描述，也无法说出其意义，但是却是生活之中最宝贵的一部分。<br/></p>
+<p><font color=#a0a0a0 size=2 face="黑体">April 16，2021</font><br><font color=#a0a0a0 size=3 face="黑体">文中未标明的图片与文字均为作者创作，如需转载请在下方评论区留言或使用邮箱</font></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Apr-2021/" rel="tag"># Apr, 2021</a>
+          
+        </div>
+      
+	
+
+	 
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/">仪式感本身，不是意义的来源</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+  <p><span>发布时间:</span>2021年04月16日 - 13:04</p>
+  <p><span>最后更新:</span>2021年04月17日 - 20:04</p>
+  <p><span>原始链接:</span><a href="/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/" title="仪式感本身，不是意义的来源">https://jackieldyh.github.io/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jackieldyh.github.io/2021/04/16/%E4%BB%AA%E5%BC%8F%E6%84%9F%E6%9C%AC%E8%BA%AB%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%84%8F%E4%B9%89%E7%9A%84%E6%9D%A5%E6%BA%90/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+	  $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/04/15/%E5%90%AC%E8%A7%81%E6%98%A5%E5%A4%A9%E7%9A%84%E5%A3%B0%E9%9F%B3/" rel="next" title="听见春天的声音">
+                <i class="fa fa-chevron-left"></i> 听见春天的声音
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/04/17/%E5%8C%97%E4%BA%AC%E5%9F%8E%E8%A5%BF/" rel="prev" title="北京城西">
+                北京城西 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">447</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ldyh18@mails.tsinghua.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; Feb.12th 2019 &mdash; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-/avatar.jpg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackie Lei</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1024.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1024.1k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y1yCyCFS6SHHYy6ur7qDj2y2-gzGzoHsz',
+        appKey: 'ntPhyVE859bvuyX9VSKRXYJf',
+        placeholder: 'You can enter your comments here to form a place of exchanging ideas',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+		visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

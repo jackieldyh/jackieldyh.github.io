@@ -1,37 +1,885 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Graduation,July, 2022,Northeast," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="假装谦虚是再虚伪不过了，那样做往往只是信口开河，有时只是转弯抹角的自夸。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="盛京遗韵">
+<meta property="og:url" content="https://jackieldyh.github.io/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/index.html">
+<meta property="og:site_name" content="Luminescent">
+<meta property="og:description" content="假装谦虚是再虚伪不过了，那样做往往只是信口开河，有时只是转弯抹角的自夸。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-18T08:07:28.000Z">
+<meta property="article:modified_time" content="2022-07-19T04:19:04.000Z">
+<meta property="article:author" content="Jackie Lei">
+<meta property="article:tag" content="Graduation">
+<meta property="article:tag" content="July, 2022">
+<meta property="article:tag" content="Northeast">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jackieldyh.github.io/2022/07/18/盛京遗韵/"/>
+
+
+
+
+
+  <title>盛京遗韵 | Luminescent</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Luminescent</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Rage, rage against the dying of the light.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jackieldyh.github.io/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luminescent">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">盛京遗韵</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-07-18T16:07:28+08:00">
+                2022-07-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Daily/" itemprop="url" rel="index">
+                    <span itemprop="name">Daily</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+             <span id="/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/" class="leancloud_visitors" data-flag-title="盛京遗韵">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><font size=3 face="楷体"><center><br>假装谦虚是再虚伪不过了，那样做往往只是信口开河，有时只是转弯抹角的自夸。<br/><br></font></center></p>
+<span id="more"></span>
+<p>&amp;emsp;&amp;emsp;之前来过沈阳，再加上临时改换的行程——一早上从长春的宾馆收拾好退房，打上车，在车上疯狂地退票改签，至少获得了一天的确定。长春西站离市中心的举例我想与城市的体量来说也并不相称——但考虑到龙嘉机场还需要用一条专门的城轨连接，在这让我感觉充满“废土”的迷幻气息的东北大地上也就不那么让我吃惊。这么远的路程，长春西却是用一个只有九个站台面的体量来回应我——我第一眼就想到的是自己生长的小城，也是九个站台面，只是不是高架候车而是线侧候车——罢了，这些大概都与我之后的人生无关。<br/><br>&amp;emsp;&amp;emsp;坐的是哈大本线的标杆车，与京哈标杆追踪——这也给没买上京哈标杆的旅客以安慰，不过因为长春西站特殊的站场布置——哈大被安排在了站台号大侧且按运行方向纾解，这两趟追踪的标杆被放在了一个检票口——这大概也是高架候车的缺点，和之前的电脑CPU核心一样，“一核有难，七核围观”。在车上便在处理纲要课的成绩问题，而这竟成为了之后两天我生活的主轴，大概不仅是我，老师和学姐也不曾想这事如此劳心费力。而我写完这些blog，之后的首要工作便是整理完助教手册和之前课上的一个时间轴，不然的话下个星期的组会上又该没工作量被老师批评了——为什么要用“又”呢？大概是招生+旅行的一个多月确实与学术又拉开了一些距离，而写blog本身，其实是让我再去拾起写作的勇气。<br/><br>&amp;emsp;&amp;emsp;到达沈阳，出站核验健康码，基操。在车站做了个核酸，直到第二天中午才出——但不管怎样，免费，也还没耽误事。沈阳北站的地铁接驳称不上好，提着箱子上上下下很多楼梯才到站前广场下的地铁口，然后在青年大街转车，又是没有楼梯+客流控制。好不容易到了中街，那与商业街一体化的地铁口隐蔽而没有电梯——好吧，权当又是一次晨练。当然，说晨练也不对，因为到酒店大堂已经是11点多了。酒店还没有空房间，于是在周边，听说是一家老字号吧，草草吃了个午餐——我是不习惯正餐用烧麦、饺子来代替的，这家店的味道也平平无奇——大概是因为开在步行街的属性大过老字号的招牌吧，尽管“老字号”能说明什么本身就是一个值得思考的问题。随后入住酒店，高层给人的不同视角还是会很改善人的心境的。也没再想去更多的景点，毕竟热浪已经影响到了东北，当然，更重要的是自己的读书和课程的统分进度。除了晚餐骑个车去张氏帅府附近吃了碗面条——据说那里的鸡架更好吃，但是我自然是对这种肉食没什么兴趣。本来还想着晚上去浑河岸边吹吹风，也因为晚上还有个统分的会不了了之。安安心心的把工作办完，然后定下来之后去北戴河。便又结束了一天，这只有空间的移动，却“仍旧”被工作填满的一天。<br/><br>&amp;emsp;&amp;emsp;想起来，自己其实是热爱这项“工作”，或者说，对教学和读书写作有着一种本能的热爱，只是不过在过程之中，它越来越让我怀疑这是不是一种后天的强迫塑造。收回来，自己之前在沈阳其实已经看了张氏帅府、沈阳故宫、九一八纪念馆、辽宁省博物馆以及北陵公园等处——也是在一天之内逛完的。想起来，那还是大二的暑假，那次衡阳还有直飞大连的航班，沈阳到北京的K53次列车也还在，而这次，本来其实沈阳城并非对我来说不够有吸引力——比如说沈阳规划展览馆、新乐遗址等等，但是在疫情，以及“工作”面前，也就只能放弃。当然，可能更大的原因还是，自己不想出去——找那么多借口干什么呢？只是在沈阳，骑车到张氏帅府的过程中，打卡了大东门和用另一种方式解锁了张氏帅府——傍晚时分，一群老年人在放置着张学良塑像的广场上跳广场舞。我当然可以将其描写为一种“人民当家作主的美好画面”，但是这并不具有意义，至少在这篇文章中如此。从哈尔滨的俄国风情，到长春的伪满犹存，再到沈阳的蒙满遗韵，自然东北三省在共和国成立之初有着诸多辉煌，但是这既有的文化，以一种底色的方式在这个区域之中赋予了各自以独特的标识。当然，三者也有很多共同点，比如说那复杂的条文而根本不设防的车站，那犹存的傲慢而带来的服务业的“非标准化”（这并不是全然是一种坏事），以及对这种作为底色的文化表述的困难。历史学研究中东北亚作为一个区域逐渐热门，但这在工业美学的建设之中仿佛成了格格不入的异类——这并不是异类，而是特质。<br/><br>&amp;emsp;&amp;emsp;而一到山海关，关内关外，也是以这样的方式给于我最直观的冲击。<br/></p>
+<p><font color= #a0a0a0 size=3 face="黑体">July 18，2022<br/><br>文中未标明的图片与文字均为作者创作，禁止转载。由于评论区技术问题，请通过邮件或Tape提问箱互动。</font></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Graduation/" rel="tag"># Graduation</a>
+          
+            <a href="/tags/July-2022/" rel="tag"># July, 2022</a>
+          
+            <a href="/tags/Northeast/" rel="tag"># Northeast</a>
+          
+        </div>
+      
+	
+
+	 
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/">盛京遗韵</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+  <p><span>发布时间:</span>2022年07月18日 - 16:07</p>
+  <p><span>最后更新:</span>2022年07月19日 - 12:07</p>
+  <p><span>原始链接:</span><a href="/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/" title="盛京遗韵">https://jackieldyh.github.io/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jackieldyh.github.io/2022/07/18/%E7%9B%9B%E4%BA%AC%E9%81%97%E9%9F%B5/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+	  $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/07/15/%E5%8C%97%E5%9B%BD%E4%B9%8B%E6%98%A5/" rel="next" title="北国之春">
+                <i class="fa fa-chevron-left"></i> 北国之春
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/07/18/%E6%B8%A4%E6%B5%B7%E6%B6%9B%E5%A3%B0/" rel="prev" title="渤海涛声">
+                渤海涛声 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">447</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ldyh18@mails.tsinghua.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; Feb.12th 2019 &mdash; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-/avatar.jpg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackie Lei</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1024.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1024.1k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y1yCyCFS6SHHYy6ur7qDj2y2-gzGzoHsz',
+        appKey: 'ntPhyVE859bvuyX9VSKRXYJf',
+        placeholder: 'You can enter your comments here to form a place of exchanging ideas',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+		visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

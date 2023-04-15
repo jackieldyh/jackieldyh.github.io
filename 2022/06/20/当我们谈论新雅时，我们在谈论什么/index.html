@@ -1,37 +1,882 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="June, 2022,Graduation," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="宝玉则觉得用“沁芳”更为新雅">
+<meta property="og:type" content="article">
+<meta property="og:title" content="当我们谈论新雅时，我们在谈论什么">
+<meta property="og:url" content="https://jackieldyh.github.io/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/index.html">
+<meta property="og:site_name" content="Luminescent">
+<meta property="og:description" content="宝玉则觉得用“沁芳”更为新雅">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-06-20T11:43:13.000Z">
+<meta property="article:modified_time" content="2022-07-19T04:18:06.000Z">
+<meta property="article:author" content="Jackie Lei">
+<meta property="article:tag" content="June, 2022">
+<meta property="article:tag" content="Graduation">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jackieldyh.github.io/2022/06/20/当我们谈论新雅时，我们在谈论什么/"/>
+
+
+
+
+
+  <title>当我们谈论新雅时，我们在谈论什么 | Luminescent</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Luminescent</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Rage, rage against the dying of the light.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jackieldyh.github.io/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luminescent">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">当我们谈论新雅时，我们在谈论什么</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-06-20T19:43:13+08:00">
+                2022-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Daily/" itemprop="url" rel="index">
+                    <span itemprop="name">Daily</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+             <span id="/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/" class="leancloud_visitors" data-flag-title="当我们谈论新雅时，我们在谈论什么">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  9
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><font size=3 face="楷体"><center><br>宝玉则觉得用“沁芳”更为新雅<br/><br></font></center></p>
+<span id="more"></span>
+
+<p>&amp;emsp;&amp;emsp;因为今年高考全国甲卷作文材料的一句话，“新雅”这个词本身再次，至少在新雅内部有了一些小范围的讨论。对我而言，新雅自我进入大学之后经历了一个不断复杂化的过程。在昨天的博文中，我用来“脱嵌”这个词来形容。或许正如那一句“只缘身在此山中”所说，直到要离开，才将将提出一些还没有能找到答案的问题。<br/><br>&amp;emsp;&amp;emsp;以下的内容本是我在新雅毕业生座谈会上写就的讲稿的一部分，也没有逻辑，更不具建设性。这被新雅书院现任院长评价为“很具有反思性，这说明PPE的教育的成功”的讲稿，在现场是留有遗憾的——正如我的本科生活。<br/><br>&amp;emsp;&amp;emsp;让我们还是从本科入学时开始。昨天看到PPE6的学长学姐写下的有关PPE的文字。两年的时间或许会让人的目光更为客观。在高考之后的毕业季，新人与旧岁交相辉映。对一些人而言，时间停滞在过去的时光，而对一些人而言，时光重新开始。二者的心境不同，也就很难说能够相互理解。而对于新雅而言，我的新雅凝滞在甘阳老师卸任新雅院长的那一天，尽管我毫不怀疑梅老师的能力与个人魅力，但是，变化终究是变化。在甘老师这样一位，可以说具有卡里斯马特质的院长离去之后，新雅如何仍然被称为新雅，新雅的共同体与机构发展又如何在既有的传统上继续前进，或许只有时间能够给我们答案，但对我而言，“新雅时间”已然过去，我会真心的希望新雅越办越好，但与此同时，在某种意义上，新雅的发展与我已并无联系。（我当然知道这句话说得非常直接，梅赐琪老师在最后发言的时候也专门回应了这句话，这也当然可以理解。但对我个人来说，新雅的凝滞是一个事实，或者说，作为一名研究历史的同学，新雅在我身上已经变成了历史的一部分）<br/><br>&amp;emsp;&amp;emsp;说回到对新雅的选择。昨天PPE6的那篇推送里有人写道，“我大概是最为坚定地选择了PPE的同学”。在某种意义上，或许我也能说出这样的话，因为我当时报名文科营时，便明确写到了我想来PPE。当然，雅礼和新雅，本就共享着一个“雅”，自己之后来PPE，尽管经历了一年，但似乎自己当时也没有对其他选择有过过多停留便来了PPE。如果说，大一我误撞进了这座新院子某种意义上的核心圈层，大二的摇晃，以及再之后对自己生活的不断反思，让我从这之中逐渐“脱嵌”。我认识到自己的局限性，认识到自己想要做的事情，认识到这个世界的复杂，也认识到自己的独特。我逐渐变得谦卑，但也变得坚定。这与新雅或许有关，但也不仅仅是新雅带给我的——毕竟，我们都无法做这样一个科学地、控制变量的实验，那就是假设不在新雅，我会怎样。历史是没有假设的，这么跌跌撞撞走来，我当然不能“吃着碗里看着锅里”去说新雅的坏话，但是，新雅究竟对我而言意味着什么，新雅又是什么？这似乎是最简单的定义，但却在我身上逐渐成为了问题。<br/><br>&amp;emsp;&amp;emsp;很有趣的，新雅两个字，如果完全取反，那就变成了“旧俗”。八字班上的通识课，除了大学之道就是古希腊文明（当然，还有西方古代宇宙论）。我愚钝，读不懂古希腊的悲剧与诗行。但我知道，norms是这之中的一个主题，这在新雅，或许在某些时候被翻译为“传统”，比如说一二九，比如说共同体。新雅的定义，当然包含这些方面。新雅一方面是【清华】的新雅，另一方面，也是清华的【新雅】。四年来能够看到，随着这座园子氛围的变化，新雅也在逐渐发生转变，比如说，同学们越来越焦虑，通识课的要求也在逐渐下降，新雅的规模也在扩大。同时，新雅内部也在经历一个理性化、制度化的过程。当然从长远发展上看这是必要的，但是这也是否会损害书院制本身所具有的人与人之间的联结？比如说，当同学们再次提起新雅的时候，是会诉诸“新雅人”“新雅八字班”或是“新雅82”，这其实是相当不同的。八字班的规模使得我们还没有这么明确的班级意识，所有人似乎也至少都相互熟悉，但是在九字班扩招之后，这似乎就已经发生了变化，哪怕是规模相近的PPE9与PPE8之间，也产生了许多不同。共同体当然是重要的，但共同体的另一面是排外。我们需要一个怎样的“共同体”？在这个原子化的世界，我们是否仍然需要共同体？这或许是一些更基本的问题。<br/><br>&amp;emsp;&amp;emsp;我还记得新生导引课的时候，阮东老师不断的跟我们强调“交流”的重要性。这当然是新雅的重要一面。但是我想说，新雅，乃至清华，可能更多能做的是提供许多资源，但是如何利用资源，是本科四年，乃至更长的人生所需要学习的过程。这意味着选择，意味着放弃，也意味着定位自身。在招生的时候，对新雅的介绍往往是“第一年任选专业”，但是一年时间究竟能改变什么？是新雅“高强度”的通识课么？我想对此我首先有几句话想说，一方面是刚刚说到的，现在学生的现实压力与课程评价的问题，对同学要求与指导实际上是逐渐降低的。另一方面是，这种“高强度”的内涵究竟是什么？或许不应该仅仅是“写就是了”，当然，写，或者说输出是其重要一面，但是“问题意识”与写作本身，如果通识课是某种PTSD式的视野开阔，真的是我们所想要做的么？是否形成了某种privilige？由此而来，新雅存在的合法性究竟是什么？是与元培对彰么？如果招生如此，新雅如何去fulfil人们的期待？必须要说，焦虑在院子里是十分正常的，但是在新雅的语境之中，要焦虑什么？换言之，在目前的环境下，新雅的特殊性，是什么？新雅，或者通识教育的位置应该怎么放？新雅或许给了人更多的探索空间，但是目前的大环境与小环境，究竟让人能不能、敢不敢探索似乎成了愈来愈迫切的问题。在这一点上，我对成为新雅人，是诚惶诚恐的，当然他给我带来了很多资源与privilege，或者是他人碰见我时一声“啊你是新雅的同学呀”。这个身份意味着什么？尤其是我曾作为三门次课程的助教，作为新雅第一个去马院的同学，自我、新雅与其他身份“调性”的相互适应是现实的问题，我也相信这是新雅绝大多数同学所需要面临的问题。<br/><br>&amp;emsp;&amp;emsp;而对PPE，世豪刚刚说到PPE的“榜样”。我看到在座可以说是有“5.5个”PPEr。PPE培养是赵晓力老师制定的。一个专业，一定是有自己的培养目标的，但随着这个专业的发展，这个专业与学生多样发展之间也逐渐产生了张力。PPE定然不是只由P、P、E三个学科的堆叠而成的，而PPE的榜样，似乎给人以一种superior的感觉。PPE不是适合所有人的。如何让PPE成为每个人的PPE，以及这些PPE之间，究竟是否会形成一个学科所具有的独特问题意识与共同体？正如赵晓力老师所说，“你们认为建立了共同体，我认为没有。”这种否定性的判断是一种希望之于失望的痛楚。而如今我也要离开，正如两年前，PPE6毕业时所认为的，“这个专业到这里已经是它的顶峰。”两年过去，似乎我们只是在验证这个判断。PPE8是特殊的，因为几乎所有的同学都选择了人文方向的科研，而选调与去往计算机系，又使得这个专业的去向有了更多可能，能够在世俗意义上更好地获得认可。但是，明年毕业的PPE9就会呈现出一种完全不同的色彩。而在甘老师离开之后的PPE，又会走向何方？连带着PPE与新雅的关系，新雅探索古典学的努力，对中西文明、古今之问的思考又会去向何方？我想，答案在风中飘。<br/><br>&amp;emsp;&amp;emsp;我相信，一百个新雅人中，可能会有一百零一种对新雅的判断与想象。很难说哪种才是“真正”的新雅。新，意味着可能性；而雅，意味着一种气度、一种风格、一种坚持。这与招生无关——尽管很大意义上，新雅目前的存在的合理性与元培密切相关。新雅会逐渐成长，会经历一个从“做事”到“做什么事”的转变，也一定会更多地经历与个人、院系、学校的张力。而正如梅赐琪老师最后总结时所说，“希望你们毕业后考虑其他生活的可能性的时候，要将新雅作为不断前进的理由。”毫无疑问，新雅是特殊的，我享受了四年的特殊，之后要回归普遍。这是一种天然的不确定性，也促使我思考，新雅意味着什么。<br/><br>&amp;emsp;&amp;emsp;这个问题本身是新雅给我留下的唯一。<br/><br><font color= #a0a0a0 size=3 face="黑体">June 21，2022<br/><br>文中未标明的图片与文字均为作者创作，禁止转载。由于评论区技术问题，请通过邮件或Tape提问箱互动。</font></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/June-2022/" rel="tag"># June, 2022</a>
+          
+            <a href="/tags/Graduation/" rel="tag"># Graduation</a>
+          
+        </div>
+      
+	
+
+	 
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/">当我们谈论新雅时，我们在谈论什么</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+  <p><span>发布时间:</span>2022年06月20日 - 19:06</p>
+  <p><span>最后更新:</span>2022年07月19日 - 12:07</p>
+  <p><span>原始链接:</span><a href="/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/" title="当我们谈论新雅时，我们在谈论什么">https://jackieldyh.github.io/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jackieldyh.github.io/2022/06/20/%E5%BD%93%E6%88%91%E4%BB%AC%E8%B0%88%E8%AE%BA%E6%96%B0%E9%9B%85%E6%97%B6%EF%BC%8C%E6%88%91%E4%BB%AC%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+	  $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/06/20/%E5%A6%82%E6%9E%9C%E5%86%8D%E8%A7%81%E4%B8%8D%E8%83%BD%E7%BA%A2%E7%9D%80%E7%9C%BC/" rel="next" title="如果再见不能红着眼">
+                <i class="fa fa-chevron-left"></i> 如果再见不能红着眼
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/06/24/%E5%8F%AF%E6%80%9C%E6%97%A0%E6%95%B0%E5%B1%B1/" rel="prev" title="可怜无数山">
+                可怜无数山 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">447</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ldyh18@mails.tsinghua.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; Feb.12th 2019 &mdash; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-/avatar.jpg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackie Lei</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1024.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1024.1k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y1yCyCFS6SHHYy6ur7qDj2y2-gzGzoHsz',
+        appKey: 'ntPhyVE859bvuyX9VSKRXYJf',
+        placeholder: 'You can enter your comments here to form a place of exchanging ideas',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+		visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

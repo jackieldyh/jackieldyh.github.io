@@ -1,37 +1,878 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Sept, 2022," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="教育的本质意味着：一棵树摇动另一棵树，一朵云推动另一朵云，一个灵魂唤醒另一个灵魂。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="助教：教什么？能教吗？">
+<meta property="og:url" content="https://jackieldyh.github.io/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/index.html">
+<meta property="og:site_name" content="Luminescent">
+<meta property="og:description" content="教育的本质意味着：一棵树摇动另一棵树，一朵云推动另一朵云，一个灵魂唤醒另一个灵魂。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-09-06T05:28:48.000Z">
+<meta property="article:modified_time" content="2022-09-16T00:29:32.000Z">
+<meta property="article:author" content="Jackie Lei">
+<meta property="article:tag" content="Sept, 2022">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jackieldyh.github.io/2022/09/06/助教：教什么？能教吗？/"/>
+
+
+
+
+
+  <title>助教：教什么？能教吗？ | Luminescent</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Luminescent</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Rage, rage against the dying of the light.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jackieldyh.github.io/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luminescent">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">助教：教什么？能教吗？</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-09-06T13:28:48+08:00">
+                2022-09-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Daily/" itemprop="url" rel="index">
+                    <span itemprop="name">Daily</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+             <span id="/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/" class="leancloud_visitors" data-flag-title="助教：教什么？能教吗？">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  3.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  12
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><font size=3 face="楷体"><center><br>教育的本质意味着：一棵树摇动另一棵树，一朵云推动另一朵云，一个灵魂唤醒另一个灵魂。<br/><br></font></center></p>
+<span id="more"></span>
+<p>&amp;emsp;&amp;emsp;这周前两天在参加助教培训。尽管自己之前已经做过三门课的助教，但是毕竟都没有进入系统，自己之前也发过，“甘当小学生”，所以还是乖乖地来了这个培训——当然从程序上来看，参加这个培训也是自己之后做助教的必要条件。助教培训之后很惊讶的发现之前联系的一位老师直接让我当她的大助教，自是诚惶诚恐。昨天又刚刚负责完组织上一学期助教的聚餐，在科研没有什么进展的时候这或许是为数不多的可资聊慰的部分，但与此愈往深处去，便发现这教学，是项“手艺活”，更需要在知识的基础上去理解课程所要达到的目的，去理解学生真实的需要，然后将自己在课堂中的位置进行一个清晰的标定。而归根结底，一切“术”的部分都是能够通过经验积累很快掌握的——毕竟在这所学校的人，只要认真，经历过一轮，犯过一些错误之后便都能掌握，而真正困难而复杂的是“道”的层面，换言之，价值观层面的思考，而这归根结底回到一个问题，那便是“what is good”。<br/><br>&amp;emsp;&amp;emsp;这篇文章还是有一点想好好地写的，我将先从我理解的清华本科生和清华的课程出发，尝试对目前清华的人文社科的通识&#x2F;专业&#x2F;思政课的各个环节写下一些自己的感受与意见。这定然是不完全、不理性甚至是不合理的，但这或许也是代表了一种视角——毕竟价值观的问题最终是无法通过简单的调和解决的，而这也才是教育最困难，也是最大的意义所在。这是对教学的热爱的最后旨归，也同样是教学与科研产生联系的原因所在。<br/><br>&amp;emsp;&amp;emsp;在谈论课程之前，需要首先讨论课程的授课方与接受方。尽管从最终目的来看这两者不应有根本的冲突——因为课堂班本是一个传道授业解惑的地方，但是这或许只是一种最理想的状况。之前我已经在这个blog里写过对学生和老师内卷逻辑的分析（或许更加学理的分析可以参见刘云杉老师的相关文章）。课堂当然是概莫能外的。但是或许有这样一种可能，或者说，我们能够看到一些这样的例子，那就是由于对课程的设想、课程的要求以及老师讲授水平等等不同，课程的接受者对这门课给出的反馈同样不同。尽管必须要承认，每一年学生群体的变化会影响课堂效果与教学反馈。但是同样应该相信，学生们是有一些共同点的，换言之，即便有一些偏离值，但对好坏的基本判断是具有普适性的。这也或许是我们之所以能够说一门课是“好课”（或者说，“金课”）的原因。“好”这个词本身就是主观的，任何人都可以由自己的感受进行判断。因而对于这个问题的讨论或许最困难的并不是制定出一个标准，而是去尝试走出自己的局限性，去理解他人所认为的“好”，从而形成一个更加整全的逻辑。<br/><br>&amp;emsp;&amp;emsp;必须指出的是，在目前这种情况下，对课程的评价与对老师的评价是两件事情——这也在前几年的教学评估中被注意。但是这或许仍然未解决的问题是，如何解读那样一些统计数据——当然首先要问的就是所选出的统计指标合不合理，然后便是统计指标应该在哪些范围内进行比较。我并不知道最后评教的分数是怎么从一个1-7分的量表化为一个百分制分数的，但看教师的页面上的显示，或许对一些离群值还是做了处理，但这背后更深的问题是，如何保证不出现“恶意评价”，或者说，这个评价有多少代表了同学们对一门课的想法。毕竟一个没有信度的调查是完全无意义的。会不会一部分恶评的同学“绑架”这门课程？课程又为什么要听同学们的想法？这本身是这个评价的预设，但这些预设或许同样需要得到检验——毕竟这是教育，而不是民主选举。<br/><br>&amp;emsp;&amp;emsp;当然，我没有在否定教评的意义，同学们的反馈当然是重要的。但在这之中有多少是老师与助教能解决的会成为另一个问题。这里面有一些最基本的问题，比如说课程难度、讲授风格，然后你会发现在这个信息流通越来越迅速的时代，路径依赖也会影响对一门课的评价。“其他老师为什么是那样的”“这门课去年为什么是那样的”，诸如此类的疑问或许同样成为课程质量提高与教学改革的重要阻力。但问题仍然是，学生应该有多大的空间进入教学内容的设计与评价之中——学生为什么有资格去评价一门他要上的课程呢？其实这个问题仍适用于助教——你有什么权利去判分呢？当然，只回答这些问题或许将教育简单的理解为了评价，但不可否认的是，评价是教育的一部分，同时也是一种动力的来源。<br/><br>&amp;emsp;&amp;emsp;那么，我们是否真正了解学生？教师又是否真正了解课程？其实这些问题是去讨论助教改革之前更为结构性的问题。在被简单的扣上一个“高帽”之前，或许更应该想的是，这场改革所诉诸的对象是什么？在这个系统之中有怎样的影响？<br/><br>&amp;emsp;&amp;emsp;这方面或许我只对人文社科的课程有发言权——毕竟理工科的知识是一个不同的逻辑，相应的，教学也有其不同的特点。但对于文科课程而言，相较于单纯的知识，所蕴含的方法（这或许还是与理工科类似的），更重要的是，所蕴含的意识形态性更为浓厚。而众所周知，去改变人的思想，这事并不是具有“一定之规”的。也正因此，文科学术，尤其是人文学科目前的知识生产仍然是一种“手作坊”式的，这使其自带某种“精英性”，与此同时又自然是“自由而无用”的。而在另一方面，相较于理工科知识而言，文科知识的生产与评判并没有一个完全客观的标准，主观性是一定会有的，而只要是人的参与就会带来差异与误差——当然机器也不是全然没有。但是人之所以会产生这些，会有个性的理由。这误差是否需要减小其实本就是一个问题——当然这个问题的前提就是我们需要一个标准来保证“公平”——但是在不同观察眼光之下可能着绝对的公平本就不存在，我们也应该允许对一个作品有不同的争论——但是，基本的等级还是应该有共识的，差就是差，好就是好，没有那么多其他的考虑。因此这样的教育也就一定是只对少数人的，可能有“陡峭的学习曲线”，比如说第一次上西方哲学就让同学直面《精神现象学》，但你也总能发现有那么两三位同学读得如痴如醉——对，教育就是给这两三个人的，其他人只是看戏罢了。而在大学，我们大多数时候都是在看戏，只是在少部分时候成为剧中人——大学，如果说学术的意义上，想培养的也正是这样的剧中人。剧中人的另一个意味时，我们只能演好有限的剧本但生命所给我们的舞台可是随机的。<br/><br>&amp;emsp;&amp;emsp;而在另一方面，清华其实给老师和助教都加上了很多外在的形式性的规则与纪律。并不是说这个不好，而是这其实同样损害了大学里本应有的知识多样性——当然，在一个可以自豪地说出自己的特色是“又红又专”（后面四个字我就不说了，感觉其实本就挺矛盾的）的学校，这种多样性或许本就不可能存在——再加上给老师越来越重的科研压力之下，如何平衡科研与教学成为日益突出的难题——毕竟，不是所有人都对教学如此上心，想做研究。而或许一些“上心”的老师，又活在自己的确定性之中，殊不知，即便只是短短两三年，学生的情况都已经发生了重大变化——比如说新高考改革、疫情影响下完成高中的一代等等。因此，或许我们需要更多的并不是一种“说服”，而是一种交流，不断地去尝试理解学生，不断地在自身与同学、学校的关系之中处理这段“棘手”的相互关系。拥有权力总是会给人带来快感，但弱势方也拥有“弱者的武器”。而说到底，教育是一项人与人之间的交流，而不是一种粗暴的说服或享受自己的权力的场域。<br/><br>&amp;emsp;&amp;emsp;因此，对教育的敬畏，或许同样体现，而且更重要的是每年都“战战兢兢”“如履薄冰”而非停留在过去的经验之上。我们需要根据学生的情况“应变”，而非按照一个一成不变之规去“教育”。如何去营造一个温馨的、安全的环境是一个考验，而应该如何给学生们信息，让学生更好接受信息，这或许是有一定规律可言，也正体现了其“手艺活”的一面。但与此同时，“手艺活”的另一面是“每一个都不一样”。比如说分组我们会看到形形色色的人，即便是一个社恐也不得不去跟他们打交道，甚至需要动用一下自己的“权威”；导读会让我们不断地反思自己对书籍的理解，以及这种理解的表达方式。如果说前者更加带有程序性色彩的话，后者可能是更加接近“教育的一部分”的。因此前一部分或许在行政上助教天然就具有某种权威——比如说有的老师会引导学生将助教称为“助教老师”，但当真正要进行内容上的输出时，自身的局限性仍然会让自己表达的权威受到不断的质疑，或者说自我怀疑。我们写出来的提纲，仅仅是一个suggestion，这不带有任何权力的色彩，也与最终的分数无关——毕竟在大学不再是“踩点给分”，而老师和助教的心思，或者说自己的局限性，终究只是暂时的。因此我们还是要回到教育本身。导读提纲，要义在“导”，可能教育也本就是“扶上马，送一程”，毕竟到最后我们强调的都是“具备独立研究的能力”，而在自己的领域之中你理所应当成为最好。<br/><br>&amp;emsp;&amp;emsp;也正是因此，作为学生，我们并没有选择老师与评价教育的权力——或许也本不应该有。知识的生产从不是一个需要民主的过程。当然这并不意味着学生不可以有意见，而是并不应该通过一种制度性的方式赋予学生以某种权威。“从来如此”当然不一定是对的，但是一定是有其持续存在的理由的。我们需要明白这个理由并且针对性的采取措施。但不论如何，教育应该看重的是知识的传授，除此之外，采取什么方式，运用什么表达都是不应该被苛责的——这也是大学为老师和学生提供的保护。毕竟如果说西欧的六十年代后期是风起云涌，那么中国的六十年代后期可能就是人间惨剧。在那种集体的狂热与无意识之下，当敬畏被抛弃，自己的局限性被鼓励而成为一种狂妄，所谓“民主”便会显露其具有獠牙的一面。而现在，或许不仅有一股这样的暗流，也同样有一种社会上的勾心斗角与追逐权力的逻辑在其中。而唯一受伤的就是教育，就是对知识的传授。这或许是我们这个泛政治的后现代社会的悲哀。<br/><br>&amp;emsp;&amp;emsp;开学第一周的周四，在助教与所学的课程都开始之后，终于有了足够的刺激让我完整这后半部分的断章——这从不只是一个评价与教育问题，而是“大人，时代变了”。<br/><br>“这个世界会好么？”<br/><br><font color= #a0a0a0 size=3 face="黑体">September 8，2022<br/><br>文中未标明的图片与文字均为作者创作，禁止转载。由于评论区技术问题，请通过邮件或Tape提问箱互动。</font></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Sept-2022/" rel="tag"># Sept, 2022</a>
+          
+        </div>
+      
+	
+
+	 
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/">助教：教什么？能教吗？</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+  <p><span>发布时间:</span>2022年09月06日 - 13:09</p>
+  <p><span>最后更新:</span>2022年09月16日 - 08:09</p>
+  <p><span>原始链接:</span><a href="/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/" title="助教：教什么？能教吗？">https://jackieldyh.github.io/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jackieldyh.github.io/2022/09/06/%E5%8A%A9%E6%95%99%EF%BC%9A%E6%95%99%E4%BB%80%E4%B9%88%EF%BC%9F%E8%83%BD%E6%95%99%E5%90%97%EF%BC%9F/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+	  $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/09/03/%E4%BF%9D%E6%9C%89%E5%AF%B9%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E7%9A%84%E6%84%9F%E7%9F%A5/" rel="next" title="保有对这个世界的感知">
+                <i class="fa fa-chevron-left"></i> 保有对这个世界的感知
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/09/16/%E6%88%91%E5%8F%AA%E6%98%AF%E6%84%9F%E5%88%B0%E7%94%9F%E6%B0%94%EF%BC%8C%E8%80%8C%E4%B8%94%E6%97%A0%E5%8A%9B/" rel="prev" title="我只是感到生气，而且无力">
+                我只是感到生气，而且无力 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">447</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ldyh18@mails.tsinghua.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; Feb.12th 2019 &mdash; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-/avatar.jpg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackie Lei</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1024.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1024.1k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y1yCyCFS6SHHYy6ur7qDj2y2-gzGzoHsz',
+        appKey: 'ntPhyVE859bvuyX9VSKRXYJf',
+        placeholder: 'You can enter your comments here to form a place of exchanging ideas',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+		visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

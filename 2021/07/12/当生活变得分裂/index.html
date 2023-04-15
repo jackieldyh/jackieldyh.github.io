@@ -1,37 +1,882 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="July, 2021," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="如果我有两副面孔的话，我就不会拿这副出来示人。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="当生活变得分裂">
+<meta property="og:url" content="https://jackieldyh.github.io/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/index.html">
+<meta property="og:site_name" content="Luminescent">
+<meta property="og:description" content="如果我有两副面孔的话，我就不会拿这副出来示人。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-12T14:00:01.000Z">
+<meta property="article:modified_time" content="2021-07-15T01:45:40.000Z">
+<meta property="article:author" content="Jackie Lei">
+<meta property="article:tag" content="July, 2021">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jackieldyh.github.io/2021/07/12/当生活变得分裂/"/>
+
+
+
+
+
+  <title>当生活变得分裂 | Luminescent</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Luminescent</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Rage, rage against the dying of the light.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jackieldyh.github.io/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luminescent">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">当生活变得分裂</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-12T22:00:01+08:00">
+                2021-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Daily/" itemprop="url" rel="index">
+                    <span itemprop="name">Daily</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+             <span id="/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/" class="leancloud_visitors" data-flag-title="当生活变得分裂">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  3.4k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  11
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><font size=3 face="楷体"><center><br>如果我有两副面孔的话，我就不会拿这副出来示人。<br/><br></font></center></p>
+<span id="more"></span>
+
+<hr>
+<p>&emsp;&emsp;实习第二周开始，当第一周的新鲜感逐渐褪去，当我们前所未有的了解到自己在这里终究只是一种体验，而对接待我们的人来说，这意味着政绩，但更多的，只是在可能十年如一日的生活之中为数不多的涟漪。对此，我们是应该有敬意的，因为在这表面的热情、干劲之下， 在人与人之间的交往与关系之下， 潜藏更深的是，对这个地方，如果仅仅从十分功利的“发展”，尤其是经济的角度来看，我不能找到任何令我感到乐观的理由。仔细回想今天，也似乎没有什么值得记下的东西，自己似乎也没干什么事情——但是事件本身的宝贵，却总是能在夜晚突然闯入我的老家，以至于对白天的碌碌无为感到羞愧难当。我们彼此都有着各自的生活， 这当然是要被相互尊重的，但是从另一个角度，因为种种原因，彼此的生活之间总是会产生或强或弱的联结，这种联结本身是宝贵的，但是同样也是消耗人精力的。<br/><br>&emsp;&emsp;昨天其实是一点半睡的，但是其实自己也不知道是什么——哦，是晚上唱了一晚上KTV，然后回来洗一个澡就到那么晚了。今天早上本来定了一个7：05的闹钟，最后发现只是为回笼觉找了个理由——但是要上班，总不能做的太过分，最后竟然还赶上了一起去政府的出租。当然这些都不是重点，这还包括早餐遇到了珊珊姐，然后在早餐快要结束的时候开始下雨——尽管比昨晚的雨相比已经小了很多，并且来去都似乎没有什么征兆，但是多少还是给上下班带来了不便。今天上班做的事情可以说是按部就班的，而且其实本志不在此的我也就心安理得的开始做一些我自己的事情。其实我总能找到借口和话术，但是还是之前文章之中所讲的，这只是一种逃避。<br/><br>&emsp;&emsp;后天就是小学期的第一个作业的DDL，作为马上要大四的学生，绩点其实对于我来说并不重要——但是当你说出这句话的时候，其实你已经揭示了在内心中对绩点的执念。这大概是的确是某种悖论吧，或许这其实更深层次反映的是自己的心中，其实仍然颇不宁静。我今天下午下班，找了个借口获得了一个半小时的独处时间——当然其实只要我愿意这是可以有很多机会的，但是如何让时间发挥它的作用，或者说，独处的时间究竟产生了什么样不同的反应，才是应该关心的。当然可能看着时间的流逝本身也能找到乐趣，只是这样的乐趣或许是有些虚无缥缈的。<br/><br>&emsp;&emsp;我在街上走着，一边是希望能找到些吃的解决完成（结果证明餍食是人类的恶），另一方面也是想好好看看这个城市——毕竟来了一个多星期了，对于城市的了解还是限于车上的匆匆一瞥。城市不大，稍微走走竟会发现地图APP的显示也不是那么可怖——这当然是比例尺的问题，但是在图像之外，更重要的意义，或许是体会一种不一样的生活，或者说，这才是空间的流动所带来改变最基础的部分。也正是在这个过程中，我感受到了一种深深的分裂感，这种感受一直持续到原本是预定需要进行的集体讨论之中。<br/><br>&emsp;&emsp;下午五六点，天空停雨放晴，下午的阳光让人误以为是霞光，洒在建筑上，从同学拍出来的照片上看，似乎的确别有一番风味，但是从路上来看，这似乎是一座城市——甚至一堆建筑再正常不过的“景色”——这或许就是被生活蒙蔽了发现美的眼睛之后的生活吧。或者说，其实我也感受到了这种在某些瞬间，在某些地方的美，但是这种感受很快就被更为寻常的生活——不论是路面呼啸而过的汽车，路旁放学的儿童，还是被沿途的叫卖声——所取代，当然你说这真正影响到了什么吗？似乎也没有，这或许就是生活本身，但是我们在这里，如果从时间来看确实还停留了挺久的，是经历着一种与学校或是一般的实践都不同的生活的，但是这也终究只是一种经验，我开始慢慢厌恶这种按部就班，并且我深深地知道这背后还有更多我所不了解的运行逻辑与人事关系，而仅仅是现在我所能接触到的这一部分就让我惶恐——大家都只是在为“党国”做事罢了，而在这一个看上去终究没有什么“发展前景”的地方，做宅多的工作，似乎都有一些“完成数目字”的嫌疑。我当然知道，这种想法的来源很大程度上是因为我已经习惯了大城市的方便快捷高效，以及对数字背后的努力缺乏认知，但是当这么鲜活的知识被一些理论，被数字简单的描述，被加以评判的时候，其实我的内心中多少是有些不太舒服的，换句话说，我们其实要找到这个问题的答案：这一切都是为了什么。<br/><br>&emsp;&emsp;这个问题在中国的语境中有一个标准而正确的答案：为了人民。但是这正确，但不能说明任何事实，我们已经习惯了这样宏大的叙述，在今天，这种宏大的叙述或许更多的指向一连串的数字与长篇累牍的文案，但是归根结底，生活是鲜活的，个体是特殊的，这个城市的每一寸土地都值得被丈量，值得被欣赏，但是我不能接受的，是这个城市丧失自己的特殊性，这个城市的每一个人被数字掩盖——而我们这一次的实习，最终也会成为材料中的一行轻飘飘的字句，而我们在这之中又究竟收获了些什么？<br/><br>&emsp;&emsp;答案在风中飘。<br/></p>
+<hr>
+<p>&emsp;&emsp;这上面一些文字，本来是想要12号写完的，结果一拖，就到了14号。这两天并没有发生什么事情，昨天我做了一天的表格，我笑称这是“复制粘贴训练”。但是不得不承认，这样机械、单调而不需要思考的工作恰恰调动了我某种热情——在敲完最后一个字符的时候，我甚至感受到了某种虚假的成就感——我觉得，这或许是为我逝去的时间做一场最为盛大的葬礼，或者说，这是我们生活中的仪式感的来源之一。但是这终究只是一种体验，这或许构成了我们实习之中的“工作”，但是仔细想想，如果当这变成生活，在办公室每天对着屏幕，在一座老旧的房屋里幻想着用自己的白纸黑字擘画一个地方将近一百万人的生活，这样的图景多少有些可笑，但是很不幸似乎这便是我工作的日常。毫无疑问，这只是一种体验，真实的工作，或者说生活之中，其实文字工作是最为紧缺，但是又某种程度来说“最不重要”的工作——或许我到现在，都仍然会更加真实的感受到一种虚浮感——这或许是一种靠近权力的感觉，但是更多的是来自于，自己实际上并没有跳出自己的舒适圈，并且去验证了一种，极具确定性，到那时没有任何波澜与激情的生活。来之前，我对这次实习其实并没有抱太大期望，它似乎就是一次普通的课程，只是并没有传统的读书或者笔记，我们要面对的是一个个鲜活的个体——但是生活的玩笑或许正在于此，我们最终仍然是面对电脑做着日复一日的工作，我们获得了更多信息，但是这些信息在文字包裹之下，只剩下敷衍与虚情假意。当然，我们可以在这之中看到很多基层政治的运行逻辑，但是这种逻辑似乎已经变成了一种常识，我们能够很好地融入其中，但是这种融入的同时也消解了问题。<br/><br>&emsp;&emsp;这或许就是我们现在的矛盾之处：一方面我们对不确定性感到恐惧，但在另一方面我们又不满足于确定性带给我们的循规蹈矩。人与人的交往或许仍然是我的死穴，换句话说，在今天早上连续接了五六个电话之后，我深深地感受到一种虚脱与无力感，仿佛自己做完了一整天的工作——但是事实上这一天的工作才刚刚开始，我还要去“应付”“领导”的提问。正如现在，因为开会与调研，整个办公室只有我一个人，这让我感受到一种舒服与自在——只要那办公室电话的铃声不要再次响起。当然，与人交往是人生活之中绕不开的部分，但是这一部分或许我们可以选择其比例。归根结底，或许“确定性”被换成“对自己生活的掌控感”会更好——需要明白的是，就算只有自己，也不已经就掌握了自己的生活，因为总是有太多的诱惑让你偏离自己原有的航向——当然，这并不一定是件坏事，但是多少，这会让人不安。在刚刚经过的这短短一个月中其实我已经多次经历了这样的转向，这或许对之后也有基础性的影响，但是我尝试着慢慢遗忘过去，去将自己的目光转移到书籍，转移到最为鲜活的生活上，去通过文字，这种私密、令人感到安全的方式去逐步对生活进行描绘。我们终究会发现，生活与人生，终究没有什么捷径可走，那些感到飘飘然的时刻，有有多少是真正属于自己，而不是属于自己的身份呢？<br/><br>&emsp;&emsp;但从另一个方面来说，我们有前所未有的丧失了感受生活的能力，这不论是在越来越细的学科分科体系之下，还是被愈来愈多事物填满的生活之中，都让人有一种窒息的绝望，与拼尽全力之后依然功败垂成的沮丧。我们需要对“我是谁”“我现在在哪”“我要去向何处”的问题，给出一个至少能说服自己的答案——当然，这回答是会变化的，并且或许永远都找不到某种“正确”，但是这就是一种发展的过程。让我们把目光再次投回被霞光装点的建筑上吧，其实这个世界不缺乏发现美的眼睛，但是我们需要追问的，或许是“什么是‘美’”。利川是一个县级市，再过一个多星期，或许我与其缘分就将结束。我其实仍然会感到惊讶，对这个城市——如果将其称之为城市的话，我仿佛失去了理解力。我可以感受这个城市的生活，熟悉这座城市的交通，但是我感受到这座城市一边是现代的治理理念与发展目标，另一方面不可改变其深处于群山之中的发展区位。我突然发现我其实是更加关心过去与现实的，这种理解力的失去，是我对这座城市的未来没有更多的想象力，或者说，我其实不关心这座城市的未来——因为连我自己的未来，现在来看也十分摇晃。<br/><br>&emsp;&emsp;我们或许会选择少有人走的那条路，或许我们仍然可以盛装出席，但是那只是对我们过去的祭奠罢了。所有的事物都是如此不同，就不要自作聪明以为自己洞若观火。<br/><br><font color= #a0a0a0 size=3 face="黑体">July 14，2021<br/><br>文中未标明的图片与文字均为作者创作，如需转载请在下方评论区留言或使用邮箱</font></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/July-2021/" rel="tag"># July, 2021</a>
+          
+        </div>
+      
+	
+
+	 
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/">当生活变得分裂</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+  <p><span>发布时间:</span>2021年07月12日 - 22:07</p>
+  <p><span>最后更新:</span>2021年07月15日 - 09:07</p>
+  <p><span>原始链接:</span><a href="/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/" title="当生活变得分裂">https://jackieldyh.github.io/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jackieldyh.github.io/2021/07/12/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E5%88%86%E8%A3%82/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+	  $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/07/10/%E5%BD%93%E7%94%9F%E6%B4%BB%E5%8F%98%E5%BE%97%E7%AE%80%E5%8D%95/" rel="next" title="当生活变得简单">
+                <i class="fa fa-chevron-left"></i> 当生活变得简单
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/07/15/%E6%88%91%E4%BB%AC%E6%9C%89%E6%80%8E%E6%A0%B7%E7%9A%84%E7%94%9F%E6%B4%BB%EF%BC%9F%E9%9C%80%E8%A6%81%E6%80%8E%E6%A0%B7%E7%9A%84%E7%94%9F%E6%B4%BB%EF%BC%9F/" rel="prev" title="我们有怎样的生活？需要怎样的生活？">
+                我们有怎样的生活？需要怎样的生活？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">447</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ldyh18@mails.tsinghua.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; Feb.12th 2019 &mdash; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-/avatar.jpg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackie Lei</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1024.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1024.1k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y1yCyCFS6SHHYy6ur7qDj2y2-gzGzoHsz',
+        appKey: 'ntPhyVE859bvuyX9VSKRXYJf',
+        placeholder: 'You can enter your comments here to form a place of exchanging ideas',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+		visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

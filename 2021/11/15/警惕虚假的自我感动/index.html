@@ -1,37 +1,879 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Nov, 2021," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="我走出了大自然。我变了。我变得不自然了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="警惕虚假的自我感动">
+<meta property="og:url" content="https://jackieldyh.github.io/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/index.html">
+<meta property="og:site_name" content="Luminescent">
+<meta property="og:description" content="我走出了大自然。我变了。我变得不自然了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-11-14T17:47:38.000Z">
+<meta property="article:modified_time" content="2021-11-14T18:21:21.430Z">
+<meta property="article:author" content="Jackie Lei">
+<meta property="article:tag" content="Nov, 2021">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jackieldyh.github.io/2021/11/15/警惕虚假的自我感动/"/>
+
+
+
+
+
+  <title>警惕虚假的自我感动 | Luminescent</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Luminescent</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Rage, rage against the dying of the light.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jackieldyh.github.io/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luminescent">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">警惕虚假的自我感动</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-11-15T01:47:38+08:00">
+                2021-11-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Daily/" itemprop="url" rel="index">
+                    <span itemprop="name">Daily</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+             <span id="/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/" class="leancloud_visitors" data-flag-title="警惕虚假的自我感动">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.9k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><font size=3 face="楷体"><center><br>我走出了大自然。<br/><br>我变了。<br/><br>我变得不自然了。<br/><br></font></center></p>
+<span id="more"></span>
+
+<p>&emsp;&emsp;有很多事情，但是我仍然想先写完这篇blog。<br/><br>&emsp;&emsp;有一个很简单，但是在今年不断在我的生活中提醒我的事实是，我是如此的与众不同。<br/><br>&emsp;&emsp;刚刚看微信，一篇记述上周因枪击去世的一位芝加哥大学学者的报道（链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QZ4AxGHO5b3GY7doobVpUw%EF%BC%89%E5%9C%A8%E6%88%91%E7%9A%84%E5%BE%AE%E4%BF%A1%E4%B8%AD%E5%88%B7%E5%B1%8F%E2%80%94%E2%80%94%E4%BB%A5%E4%B8%80%E7%A7%8D%E5%8D%81%E5%88%86%E5%85%8B%E5%88%B6%E7%9A%84%E6%96%B9%E5%BC%8F%E3%80%82%E6%88%91%E5%9C%A8%E9%82%A3%E4%B9%8B%E4%B8%AD%E6%84%9F%E5%8F%97%E5%88%B0%E4%BA%86%E4%B8%80%E7%A7%8D%E7%9C%9F%E5%AE%9E%EF%BC%8C%E4%B8%80%E7%A7%8D%E7%86%9F%E6%82%89%E3%80%82%E6%88%91%E7%9F%A5%E9%81%93%EF%BC%8C%E6%88%91%E7%9A%84%E5%BE%AE%E4%BF%A1%E4%B8%AD%E6%9C%89%E5%BE%88%E5%A4%9A%E8%AE%A4%E8%AF%86%E7%9A%84%E5%90%8C%E5%AD%A6%E7%8E%B0%E5%9C%A8%E8%BF%98%E5%9C%A8%E9%82%A3%E5%BA%A7%E5%9F%8E%E5%B8%82%E8%BF%87%E7%9D%80%E8%87%AA%E5%B7%B1%E7%9A%84%E7%94%9F%E6%B4%BB%E3%80%82%E8%80%8C%E8%BF%99%E4%B9%8B%E4%B8%AD%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%EF%BC%8C%E6%98%AF%E4%B9%8B%E5%89%8D%E6%9A%91%E5%81%87%E5%8F%82%E5%8A%A0%E6%9F%90%E4%B8%AA%E6%B4%BB%E5%8A%A8%E4%B8%80%E8%B5%B7%E8%AE%A4%E8%AF%86%E7%9A%84%E3%80%82%E4%BB%8A%E5%B9%B4%E6%9A%91%E5%81%87%E6%98%AF%E6%88%91%E5%8F%82%E5%8A%A0%E8%BF%99%E4%B8%AA%E6%B4%BB%E5%8A%A8%E7%9A%84%E7%AC%AC%E4%BA%8C%E5%B9%B4%EF%BC%8C%E8%80%8C%E6%88%91%E5%BE%88%E8%82%AF%E5%AE%9A%E7%9A%84%E6%98%AF%EF%BC%8C%E4%B9%9F%E4%BC%9A%E6%98%AF%E6%9C%80%E5%90%8E%E4%B8%80%E5%B9%B4%E3%80%82%E6%88%91%E8%BF%98%E8%AE%B0%E5%BE%97%E4%B8%80%E4%BD%8D%E7%8E%B0%E5%9C%A8%E4%B9%9F%E5%9C%A8%E8%8A%9D%E5%8A%A0%E5%93%A5%E7%9A%84%E6%9C%8B%E5%8F%8B%E8%B7%9F%E6%88%91%E8%AF%B4%E7%9A%84%EF%BC%8C%E6%9C%89%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E6%B4%BB%E5%8A%A8%EF%BC%8C%E8%BF%99%E4%B9%8B%E4%B8%AD%E7%9A%84%E4%BA%BA%E7%9A%84%E7%A7%8D%E7%A7%8D%EF%BC%8C%E6%88%91%E6%98%8E%E7%99%BD%E8%87%AA%E5%B7%B1%E4%B8%8D%E6%98%AF%E8%A6%81%E5%AF%BB%E6%B1%82%E5%90%8C%E6%83%85%E6%88%96%E6%98%AF%E8%AE%A4%E5%90%8C%E2%80%94%E2%80%94%E8%BF%99%E5%AF%B9%E7%8E%B0%E5%9C%A8%E7%9A%84%E6%88%91%E6%9D%A5%E8%AF%B4%EF%BC%8C%E6%88%96%E8%AE%B8%E5%90%8C%E6%A0%B7%E7%A8%80%E7%BC%BA%E2%80%94%E2%80%94%E5%8F%AA%E6%98%AF%E6%83%B3%E5%8E%BB%E8%A1%A8%E8%BE%BE%EF%BC%8C%E5%8E%BB%E5%B0%86%E8%87%AA%E5%B7%B1%E6%9D%82%E4%B9%B1%E7%9A%84%E6%83%B3%E6%B3%95%E7%94%A8%E4%B8%80%E7%A7%8D%E7%90%86%E6%80%A7%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%8C%E8%AE%A9%E8%87%AA%E5%B7%B1%E5%90%AC%E5%88%B0%E3%80%82%E4%BD%86%EF%BC%8C%E5%BD%93%E8%AF%9D%E4%B8%80%E8%AF%B4%E5%87%BA%E6%9D%A5%EF%BC%8C%E5%B0%B1%E4%B8%8D%E5%86%8D%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E3%80%82%E6%88%91%E9%9C%80%E8%A6%81%E5%8E%BB%E9%9D%A2%E5%AF%B9%E7%94%9F%E6%B4%BB%E4%B9%8B%E4%B8%AD%E7%9A%84%E7%A7%8D%E7%A7%8D%EF%BC%8C%E8%80%8C%E4%B8%8D%E5%B9%B8%E7%9A%84%E6%98%AF%EF%BC%8C%E7%94%9F%E6%B4%BB%E8%AE%A9%E6%88%91%E6%84%8F%E8%AF%86%E5%88%B0%EF%BC%8C">https://mp.weixin.qq.com/s/QZ4AxGHO5b3GY7doobVpUw）在我的微信中刷屏——以一种十分克制的方式。我在那之中感受到了一种真实，一种熟悉。我知道，我的微信中有很多认识的同学现在还在那座城市过着自己的生活。而这之中的大多数人，是之前暑假参加某个活动一起认识的。今年暑假是我参加这个活动的第二年，而我很肯定的是，也会是最后一年。我还记得一位现在也在芝加哥的朋友跟我说的，有关于这个活动，这之中的人的种种，我明白自己不是要寻求同情或是认同——这对现在的我来说，或许同样稀缺——只是想去表达，去将自己杂乱的想法用一种理性的方式，让自己听到。但，当话一说出来，就不再属于自己。我需要去面对生活之中的种种，而不幸的是，生活让我意识到，</a> 我与周边的人的不同。<br/><br>&emsp;&emsp;今天中午与同学吃饭，我没有想到一餐饭从十一点吃到了下午两点，然后我睡到了下午五点，发现选课系统更新了，于是花了两个小时在选课上，然后与大一的同学聊天，到晚上九点，然后开始看《乡里的圣人》——其实更多的是在玩手机——到晚上一点，然后就是现在在写这篇blog。或许值得追述的是，今天的开始，也是在昨晚上开完会之后，与两位大二同学的聊天，然后一觉睡到早上九点，游了一个小时泳，洗洗玩玩，然后就到了十一点。这样叙述起来，似乎这一天也很简单，之中也存在太多“优化”的空间。但是这是记述的意义吗？或许不是，在这里，同样是一种表达，只是更多的我可以不顾及读者——但是一个更大的问题是，我没有想好如何面对我自己，或者说，我发现我需要他人的反馈，但与此同时我又深深的为此感到恐惧——我害怕自己做的不够好，耽误了他人的时间。<br/><br>&emsp;&emsp;但或许这之后的更深层次的问题是，我根本没有想好要说些什么，尽管我可以随意地“聊”上两个小时，但是那或许就只是我的独角秀，而我只是茫然的用声音将时间填满。这之中或许有一些时光留下的影子，但回看的时候，视角让这影子变形，于是乎其教育意义便需要被打上一个大大的问号。而或许更为尴尬的是，每个人的影子都是不一样的，更不用说每个人都是走在不同道路上的，只是在中途的某个点我们偶然相遇。尽管我们都会用“朋友”这样的词，但是这或许更多的只是一种拉近彼此间距离的话术，在大多数情况下并不是一种真实的情感关系的指涉。诚然，彼此有不同的关心，不同的价值追求与取向是一件再正常不过的事情，哪怕关系被外界定义为“男女朋友”，首先要说明的是彼此仍然是两个独立的个体，但这种关系的尺度就变得相当微妙，或者说，比起“吃瓜”或是“狗粮”，自己仍然会记得自己所认为的感情开始的那一句话，“让我们尝试一种新关系的可能性”。<br/><br>&emsp;&emsp;有人说这句话太过学术，但我想正是在这种学术的包装下才能够安放我迷惘的心灵。我发现我们更多的是满足某种外界对我们的期待，而作为回报，我们会在极度尊重彼此独立性的情况下去做出一些符合外界期望的回应——但这又恰恰是取消了彼此的主体性的。这或许是一个悖论，但是这个的根源是很清晰的——那就是我们其实都还在“探索可能性”。大概这也是一个学习的过程，但是更为重要的是，通过今天的谈话，我发现彼此所关心的，至少在目前这个阶段，是具有一些，可能我认为是性质上的差异的。这或许并不是一件坏事，这只是一件事实，但是如何去接受它，处理它，在时间的流逝与学术的追求过程中，在逐渐取消一些共同语境的基础上，仍然保持一种情感上的连接，或许同样是一个值得思考的问题。<br/><br>&emsp;&emsp;而对此就不得不提到刚刚过去的男生节，过去这个周末似乎有很多“本科期间最后一次”，这或许也是这篇blog标题的来源。而这也是我这一年所作种种努力之后最大的感受——我学着合群，学着感受生活，但是我却在这之中同时感受到了一种主体被扭曲的不适感。我尝试说服自己那只是一种错觉，但是我发现自己不会拒绝，难以拒绝，甚至这种不适感构成了我生命真实感的一部分。我无法走出过去所带给我的交往方式、人际关系、知识结构与思维方式——这当然不可能从零开始，但是如何去认识过去，直接关系到的是如何面对未来。我赞赏一切努力与付出，但是这不意味着努力过，付出过的结果，就应该自然得到尊重，或者说，至少还有一些“评价”的空间，尽管这个空间会需要考虑到社交礼仪。而在这里，我或许终于能够说，我感受到一种空虚与失落。我尝试将这归结为自身的问题，去与世隔绝首先寻找自己身上的原因，然后我发现是徒劳的，我需要在这个世界的联系之中获得生活的动力与意义——至少是一部分的动力与意义——也同样需要在生活之中去解决问题，继续生活。但是这不意味着改变不能够发生，相反，这是更加必要的。在今天最后一节游泳课的结尾，没有告别，那位年轻的老师——甚至我们彼此从来没有用过“老师”这个词——说，“再见了，记住，你没有问题的”。我突然感受到一种最近我极度稀缺的认可。而伴着泳池，我可以隐藏自己的泪水。<br/><br>&emsp;&emsp;这或许也是一种“虚假的自我感动”吧。<br/><br><font color= #a0a0a0 size=3 face="黑体">November 15，2021<br/><br>文中未标明的图片与文字均为作者创作，如需转载请在下方评论区留言或使用邮箱</font></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Nov-2021/" rel="tag"># Nov, 2021</a>
+          
+        </div>
+      
+	
+
+	 
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/">警惕虚假的自我感动</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
+  <p><span>发布时间:</span>2021年11月15日 - 01:11</p>
+  <p><span>最后更新:</span>2021年11月15日 - 02:11</p>
+  <p><span>原始链接:</span><a href="/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/" title="警惕虚假的自我感动">https://jackieldyh.github.io/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jackieldyh.github.io/2021/11/15/%E8%AD%A6%E6%83%95%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+	  $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/11/12/%E6%97%B6%E9%97%B4%E7%9A%84%E5%8F%A0%E5%8D%B0/" rel="next" title="时间的叠印">
+                <i class="fa fa-chevron-left"></i> 时间的叠印
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/11/19/%E5%BD%93%E6%89%80%E6%9C%89%E6%84%8F%E4%B9%89%E5%B4%A9%E8%A7%A3/" rel="prev" title="当所有意义崩解">
+                当所有意义崩解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">447</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">76</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ldyh18@mails.tsinghua.edu.cn" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; Feb.12th 2019 &mdash; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-/avatar.jpg"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jackie Lei</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1024.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1024.1k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Y1yCyCFS6SHHYy6ur7qDj2y2-gzGzoHsz',
+        appKey: 'ntPhyVE859bvuyX9VSKRXYJf',
+        placeholder: 'You can enter your comments here to form a place of exchanging ideas',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+		visitor: true
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
